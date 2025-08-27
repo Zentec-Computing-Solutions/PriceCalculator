@@ -11,7 +11,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-inputStr = st.number_input("Input Value...", step=1, min_value=0, value=None)
+inputStr = st.number_input(
+    "Input Value...", min_value=0., value=None, step=1., format="%.2f")
 result = None
 error = None
 
